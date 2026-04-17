@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/line_top" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintGuide_percent="0.15"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/banner_line_left" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintGuide_percent="0.23"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/banner_line_right" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintGuide_percent="0.77"/>
+        <ImageView android:id="@+id/fragment_plane_background_image" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/plane_background" android:scaleType="fitXY" app:layout_constraintBottom_toTopOf="@+id/fragment_plane_bottom_bar" app:layout_constraintTop_toTopOf="0"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="@+id/banner_line_right" app:layout_constraintStart_toEndOf="@+id/banner_line_left" app:layout_constraintTop_toTopOf="0">
+            <ImageView android:id="@+id/fragment_plane_banner_image" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/plane_banner_background" android:adjustViewBounds="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/guideline_bottom" app:layout_constraintEnd_toStartOf="@+id/guideline_end" app:layout_constraintStart_toEndOf="@+id/guideline_start" app:layout_constraintTop_toBottomOf="@+id/guideline_top">
+                <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/plane_information" android:layout_weight="1" android:fontFamily="serif" style="@style/shadow_textview"/>
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:id="@+id/fragment_plane_destination" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plane_destination" android:layout_alignParentEnd="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:id="@+id/fragment_plane_time" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plane_time" android:layout_alignParentEnd="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:id="@+id/fragment_plane_temperature" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plane_temperature" android:layout_alignParentEnd="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:gravity="end" android:id="@+id/fragment_plane_height" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentStart="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:gravity="start" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plane_height" android:layout_alignParentEnd="true" android:paddingHorizontal="4dp" style="@style/shadow_textview"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/guideline_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.39"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/guideline_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.92"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/guideline_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.07"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/guideline_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.93"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <RelativeLayout android:id="@+id/fragment_plane_skirmishes_button" android:visibility="gone" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/line_top" style="@style/circle_button_layout">
+            <ImageView android:src="@drawable/button_circle_skirmishes" style="@style/circle_button_image_view"/>
+            <TextView android:text="@string/skirmishes" style="@style/circle_button_text_view"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/fragment_plane_phone_button" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/line_top" style="@style/circle_button_layout">
+            <ImageView android:src="@drawable/button_circle_phone" style="@style/circle_button_image_view"/>
+            <ImageView android:id="@+id/fragment_plane_phone_alert" android:padding="0dp" style="@style/bottom_bar_alert_icon_imageview"/>
+            <TextView android:text="@string/phone" style="@style/circle_button_text_view"/>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_plane_bottom_bar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_bar_background" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.12"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.9"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.056"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.945"/>
+            <LinearLayout app:layout_constraintBottom_toBottomOf="@+id/bottom_line" app:layout_constraintEnd_toEndOf="@+id/right_line" app:layout_constraintStart_toEndOf="@+id/left_line" app:layout_constraintTop_toBottomOf="@+id/top_line" style="@style/fragment_default_main_bottom_bar_layout">
+                <RelativeLayout android:id="@+id/fragment_plane_chat_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_chat" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/chat" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/fragment_plane_news_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_news" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/news" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="3"/>
+                <RelativeLayout android:id="@+id/fragment_plane_shop_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_shop" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/shop" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

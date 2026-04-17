@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/fragment_store_top_buttons_layout" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="16dp">
+        <TextView android:layout_gravity="bottom" android:id="@+id/fragment_store_museum_button" android:background="@drawable/store_button_disabled" android:text="@string/button_display" style="@style/tap_top_button"/>
+        <TextView android:layout_gravity="bottom" android:id="@+id/fragment_store_stall_button" android:background="@drawable/store_button_disabled" android:text="@string/button_stall" style="@style/tap_top_button"/>
+        <TextView android:id="@+id/fragment_store_stock_button" android:background="@drawable/store_button_enabled" android:layout_height="36dp" android:text="@string/stock" style="@style/tap_top_button"/>
+        <TextView android:layout_gravity="bottom" android:id="@+id/fragment_store_bag_button" android:background="@drawable/store_button_disabled" android:text="@string/button_bag" style="@style/tap_top_button"/>
+    </LinearLayout>
+    <View android:id="@+id/fragment_store_divider_line" android:background="@color/divider_line" android:layout_width="match_parent" android:layout_height="3dp" android:layout_below="@+id/fragment_store_top_buttons_layout"/>
+    <FrameLayout android:id="@+id/fragment_store_frame_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/fragment_store_divider_line"/>
+</RelativeLayout>

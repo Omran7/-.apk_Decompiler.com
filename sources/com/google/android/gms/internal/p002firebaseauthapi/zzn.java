@@ -1,0 +1,21 @@
+package com.google.android.gms.internal.p002firebaseauthapi;
+
+import java.io.Serializable;
+import java.util.regex.Pattern;
+
+/* renamed from: com.google.android.gms.internal.firebase-auth-api.zzn  reason: invalid package */
+final class zzn extends zzl implements Serializable {
+    private final Pattern zza;
+
+    public zzn(Pattern pattern) {
+        this.zza = (Pattern) zzw.zza(pattern);
+    }
+
+    public final String toString() {
+        return this.zza.toString();
+    }
+
+    public final zzm zza(CharSequence charSequence) {
+        return new zzq(this.zza.matcher(charSequence));
+    }
+}

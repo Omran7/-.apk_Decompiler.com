@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="36dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginStart="-12dp" android:layout_toEndOf="@+id/item_tob_bar_progress_bar_icon">
+        <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/item_tob_bar_progress_bar_value_text" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="-2dp" android:paddingStart="12dp" android:paddingEnd="0dp"/>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/empty_progress_bar_icon"/>
+            <ImageView android:id="@+id/item_tob_bar_progress_bar_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/health_progress_bar" android:layout_centerInParent="true" android:paddingStart="1dp" android:paddingEnd="1dp"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/item_tob_bar_progress_bar_timer_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="12dp" android:paddingEnd="0dp">
+                <ImageView android:layout_width="8dp" android:layout_height="8dp" android:src="@drawable/time_watch_icon"/>
+                <TextView android:textSize="8sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/item_tob_bar_progress_bar_timer_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:layout_marginStart="4dp"/>
+            </LinearLayout>
+            <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/item_tob_bar_progress_bar_name" android:layout_width="wrap_content" android:layout_height="12dp" android:layout_marginTop="-3dp" android:paddingStart="14dp" android:paddingEnd="0dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/item_tob_bar_progress_bar_icon" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/health_icon" android:adjustViewBounds="true"/>
+</RelativeLayout>

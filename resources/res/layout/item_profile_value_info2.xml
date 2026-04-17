@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="3dp" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="start" android:id="@+id/item_profile_value_info_value_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/item_profile_value_info_value" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/shadow_textview"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="end" android:id="@+id/item_profile_value_info_title_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_gray_white" android:id="@+id/item_profile_value_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/shadow_textview"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/black_light" android:layout_width="match_parent" android:layout_height="2dp"/>
+</LinearLayout>

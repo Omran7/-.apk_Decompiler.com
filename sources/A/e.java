@@ -1,0 +1,10 @@
+package A;
+
+import android.content.Context;
+import java.util.concurrent.Executor;
+
+public abstract class e {
+    public static Executor a(Context context) {
+        return context.getMainExecutor();
+    }
+}

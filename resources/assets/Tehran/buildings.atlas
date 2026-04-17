@@ -1,0 +1,63 @@
+buildings.png
+	size: 1024, 512
+	filter: Linear, Linear
+@building_fake4
+	bounds: 542, 417, 170, 94
+@building_fake5
+	bounds: 714, 417, 150, 94
+@building_fake6
+	bounds: 375, 406, 165, 105
+@building_fake8
+	bounds: 1, 58, 160, 111
+@building_tehran
+	bounds: 375, 274, 120, 130
+@building_tehran2
+	bounds: 1, 171, 300, 340
+@building_tehran3
+	bounds: 303, 94, 70, 417
+@grass_decorate
+	bounds: 1, 1, 90, 55
+@grass_peice
+	bounds: 866, 420, 45, 24
+@grass_peice6
+	bounds: 497, 299, 45, 43
+@others_chair
+	bounds: 963, 461, 42, 50
+@others_fire
+	bounds: 289, 152, 6, 17
+@others_postal
+	bounds: 1007, 488, 13, 23
+@others_stack
+	bounds: 150, 1, 32, 55
+@others_stack2
+	bounds: 465, 227, 27, 45
+@others_traffic_light
+	bounds: 421, 145, 14, 50
+@others_traffic_light3
+	bounds: 437, 151, 13, 50
+@others_traffic_light4
+	bounds: 163, 99, 66, 70
+@others_trash
+	bounds: 163, 60, 37, 37
+@others_trash2
+	bounds: 202, 72, 18, 25
+@others_trash5
+	bounds: 375, 100, 23, 28
+@others_trash6
+	bounds: 497, 275, 18, 22
+@tree
+	bounds: 866, 446, 59, 65
+@tree11
+	bounds: 231, 109, 56, 60
+@tree16
+	bounds: 375, 130, 44, 65
+@tree2
+	bounds: 375, 197, 60, 75
+@tree4
+	bounds: 93, 1, 55, 55
+@tree6
+	bounds: 497, 344, 36, 60
+@tree7
+	bounds: 927, 451, 34, 60
+@tree8
+	bounds: 437, 203, 26, 69

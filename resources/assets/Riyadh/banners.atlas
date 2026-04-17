@@ -1,0 +1,19 @@
+banners.png
+	size: 2048, 64
+	filter: Linear, Linear
+@banner_airport
+	bounds: 1, 1, 170, 43
+@banner_city_market
+	bounds: 173, 1, 170, 43
+@banner_fight_club
+	bounds: 345, 1, 170, 43
+@banner_gang_center
+	bounds: 517, 1, 170, 43
+@banner_gym
+	bounds: 689, 1, 170, 43
+@banner_hospital
+	bounds: 861, 1, 170, 43
+@banner_prison
+	bounds: 1033, 1, 170, 43
+@banner_secret_lab
+	bounds: 1205, 1, 170, 43

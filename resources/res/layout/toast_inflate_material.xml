@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:id="@+id/toast_inflate_items_main_layout" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/toast_store_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp">
+        <GridView android:orientation="vertical" android:id="@+id/toast_inflate_items_grid_view" android:padding="8dp" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="4dp" android:verticalSpacing="4dp" android:divider="@android:color/transparent" android:dividerHeight="8dp" android:layout_centerInParent="true" android:overScrollMode="never"/>
+    </RelativeLayout>
+</RelativeLayout>

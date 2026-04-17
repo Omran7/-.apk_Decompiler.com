@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:oneshot="true">
+    <item android:duration="75" android:drawable="@drawable/fight_weapon_gun_1"/>
+    <item android:duration="75" android:drawable="@drawable/fight_weapon_gun_2"/>
+    <item android:duration="75" android:drawable="@drawable/fight_weapon_gun_3"/>
+    <item android:duration="75" android:drawable="@drawable/fight_weapon_gun_4"/>
+    <item android:duration="75" android:drawable="@drawable/fight_weapon_gun_5"/>
+    <item android:duration="75" android:drawable="@drawable/fight_weapon_gun_6"/>
+</animation-list>

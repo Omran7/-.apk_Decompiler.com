@@ -1,0 +1,5 @@
+package okhttp3.internal.cache;
+
+public interface CacheRequest {
+    void a();
+}

@@ -1,0 +1,21 @@
+floor.png
+	size: 2048, 256
+	filter: Linear, Linear
+@floor_interlock
+	bounds: 1009, 130, 250, 118
+@floor_interlock5
+	bounds: 505, 127, 250, 121
+@floor_interlock6
+	bounds: 505, 4, 250, 121
+@floor_rocks_cracks
+	bounds: 1, 1, 250, 122
+@floor_rocks_cracks2
+	bounds: 757, 127, 250, 121
+@floor_sand2
+	bounds: 1, 125, 250, 123
+@floor_solid
+	bounds: 757, 4, 250, 121
+@floor_water
+	bounds: 253, 126, 250, 122
+@floor_water_sand2
+	bounds: 253, 2, 250, 122

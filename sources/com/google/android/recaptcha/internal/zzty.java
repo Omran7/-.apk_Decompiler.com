@@ -1,0 +1,11 @@
+package com.google.android.recaptcha.internal;
+
+public final class zzty extends zzmx implements zzoj {
+    private zzty() {
+        throw null;
+    }
+
+    public /* synthetic */ zzty(zzug zzug) {
+        super(zztz.zzb);
+    }
+}

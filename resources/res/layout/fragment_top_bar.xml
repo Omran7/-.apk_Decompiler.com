@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_top_bar_layout" android:background="@drawable/background_top_bar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/fragment_bottom_bar_city_name_layout">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/profile_pic_top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.06"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/profile_pic_bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.505"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/name_top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.54"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/name_bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.715"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/name_left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.029"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/name_right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.198"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/cash_left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.54"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/cash_right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.96"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/gold_left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.225"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/gold_right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.515"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/body_top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.08"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/body_middle_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.391"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/body_bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.74"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/level_left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.167"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/level_right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.913"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/level_top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.845"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/level_top_line_2" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.815"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/level_bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.97"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="@+id/profile_pic_bottom_line" app:layout_constraintEnd_toEndOf="@+id/name_right_line" app:layout_constraintStart_toEndOf="@+id/name_left_line" app:layout_constraintTop_toBottomOf="@+id/profile_pic_top_line">
+            <com.mtma.criminal.city.views.SquareView android:id="@+id/fragment_top_bar_image_view" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <ImageView android:id="@+id/fragment_top_bar_vip_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginBottom="-2dp" android:src="@drawable/vip_text_icon" android:adjustViewBounds="true" android:layout_alignParentBottom="true" android:layout_marginEnd="-2dp" android:layout_alignParentEnd="true" app:layout_constraintBottom_toBottomOf="@+id/fragment_top_bar_image_view" app:layout_constraintEnd_toEndOf="@+id/fragment_top_bar_image_view"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/fragment_top_bar_name" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="0dp" android:layout_height="0dp" android:maxLines="1" android:autoSizeTextType="1" android:autoSizeStepGranularity="1sp" android:autoSizeMinTextSize="8sp" android:paddingHorizontal="2dp" android:autoSizeMaxTextSize="14sp" app:layout_constraintBottom_toBottomOf="@+id/name_bottom_line" app:layout_constraintEnd_toEndOf="@+id/name_right_line" app:layout_constraintStart_toEndOf="@+id/name_left_line" app:layout_constraintTop_toBottomOf="@+id/name_top_line"/>
+        <ImageView android:id="@+id/fragment_top_bar_gold_icon" android:layout_width="wrap_content" android:layout_height="26dp" android:src="@drawable/gold_icon" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="@+id/body_middle_line" app:layout_constraintStart_toEndOf="@+id/gold_left_line" app:layout_constraintTop_toTopOf="@+id/body_top_line"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/gold_text" android:ellipsize="end" android:id="@+id/fragment_top_bar_gold_text" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" app:autoSizeMaxTextSize="12sp" app:autoSizeMinTextSize="8sp" app:autoSizeStepGranularity="1sp" app:autoSizeTextType="1" app:layout_constraintBottom_toBottomOf="@+id/body_middle_line" app:layout_constraintEnd_toStartOf="@+id/fragment_top_bar_gold_add_button" app:layout_constraintStart_toEndOf="@+id/fragment_top_bar_gold_icon" app:layout_constraintTop_toTopOf="@+id/body_top_line"/>
+        <ImageView android:id="@+id/fragment_top_bar_gold_add_button" android:layout_width="wrap_content" android:layout_height="18dp" android:src="@drawable/plus_light_icon" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="@+id/body_middle_line" app:layout_constraintEnd_toEndOf="@+id/gold_right_line" app:layout_constraintTop_toTopOf="@+id/body_top_line"/>
+        <ImageView android:id="@+id/fragment_top_bar_cash_icon" android:layout_width="wrap_content" android:layout_height="30dp" android:src="@drawable/cash_icon" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="@+id/body_middle_line" app:layout_constraintStart_toEndOf="@+id/cash_left_line" app:layout_constraintTop_toTopOf="@+id/body_top_line"/>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/fragment_top_bar_cash_text" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" app:autoSizeMaxTextSize="12sp" app:autoSizeMinTextSize="8sp" app:autoSizeStepGranularity="1sp" app:autoSizeTextType="1" app:layout_constraintBottom_toBottomOf="@+id/body_middle_line" app:layout_constraintEnd_toStartOf="@+id/fragment_top_bar_cash_add_button" app:layout_constraintStart_toEndOf="@+id/fragment_top_bar_cash_icon" app:layout_constraintTop_toTopOf="@+id/body_top_line"/>
+        <ImageView android:id="@+id/fragment_top_bar_cash_add_button" android:layout_width="wrap_content" android:layout_height="18dp" android:src="@drawable/plus_light_icon" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="@+id/body_middle_line" app:layout_constraintEnd_toEndOf="@+id/cash_right_line" app:layout_constraintTop_toTopOf="@+id/body_top_line"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/fragment_tob_bar_main_states_layout" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginBottom="2dp" app:layout_constraintBottom_toBottomOf="@+id/body_bottom_line" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/name_right_line" app:layout_constraintTop_toBottomOf="@+id/body_middle_line">
+            <RelativeLayout style="@style/top_bar_main_layout">
+                <LinearLayout android:layout_toEndOf="@+id/fragment_tob_bar_power_icon" style="@style/top_bar_second_layout">
+                    <TextView android:id="@+id/fragment_tob_bar_power_value_text" style="@style/top_bar_value_textview"/>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <ImageView style="@style/top_bar_empty_bar_imageview"/>
+                        <ImageView android:id="@+id/fragment_tob_bar_power_bar_value" android:src="@drawable/power_progress_bar" style="@style/top_bar_fill_bar_imageview"/>
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <LinearLayout android:id="@+id/fragment_tob_bar_power_timer_layout" style="@style/top_bar_fourth_layout">
+                            <ImageView style="@style/top_bar_timer_imageview"/>
+                            <TextView android:id="@+id/fragment_tob_bar_power_timer_text" style="@style/top_bar_timer_textview"/>
+                        </LinearLayout>
+                        <TextView android:id="@+id/fragment_tob_bar_power_name" android:text="@string/power_name" style="@style/top_bar_name_textview"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/fragment_tob_bar_power_icon" android:src="@drawable/power_icon" style="@style/top_bar_icon_imageview"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/top_bar_main_layout">
+                <LinearLayout android:layout_toEndOf="@+id/fragment_tob_bar_courage_icon" style="@style/top_bar_second_layout">
+                    <TextView android:id="@+id/fragment_tob_bar_courage_value_text" style="@style/top_bar_value_textview"/>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <ImageView style="@style/top_bar_empty_bar_imageview"/>
+                        <ImageView android:id="@+id/fragment_tob_bar_courage_bar_value" android:src="@drawable/courage_progress_bar" style="@style/top_bar_fill_bar_imageview"/>
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <LinearLayout android:id="@+id/fragment_tob_bar_courage_timer_layout" style="@style/top_bar_fourth_layout">
+                            <ImageView style="@style/top_bar_timer_imageview"/>
+                            <TextView android:id="@+id/fragment_tob_bar_courage_timer_text" style="@style/top_bar_timer_textview"/>
+                        </LinearLayout>
+                        <TextView android:id="@+id/fragment_tob_bar_courage_name" android:text="@string/courage_name" style="@style/top_bar_name_textview"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/fragment_tob_bar_courage_icon" android:src="@drawable/courage_icon" style="@style/top_bar_icon_imageview"/>
+            </RelativeLayout>
+            <RelativeLayout style="@style/top_bar_main_layout">
+                <LinearLayout android:layout_toEndOf="@+id/fragment_tob_bar_nobility_icon" style="@style/top_bar_second_layout">
+                    <TextView android:id="@+id/fragment_tob_bar_nobility_value_text" style="@style/top_bar_value_textview"/>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <ImageView style="@style/top_bar_empty_bar_imageview"/>
+                        <ImageView android:id="@+id/fragment_tob_bar_nobility_bar_value" android:src="@drawable/nobility_progress_bar" style="@style/top_bar_fill_bar_imageview"/>
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <LinearLayout android:id="@+id/fragment_tob_bar_nobility_timer_layout" style="@style/top_bar_fourth_layout">
+                            <ImageView style="@style/top_bar_timer_imageview"/>
+                            <TextView android:id="@+id/fragment_tob_bar_nobility_timer_text" style="@style/top_bar_timer_textview"/>
+                        </LinearLayout>
+                        <TextView android:id="@+id/fragment_tob_bar_nobility_name" android:text="@string/nobility_name" style="@style/top_bar_name_textview"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/fragment_tob_bar_nobility_icon" android:src="@drawable/nobility_icon" style="@style/top_bar_icon_imageview"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/fragment_tob_bar_health_layout" style="@style/top_bar_main_layout">
+                <LinearLayout android:layout_toEndOf="@+id/fragment_tob_bar_health_icon" style="@style/top_bar_second_layout">
+                    <TextView android:id="@+id/fragment_tob_bar_health_value_text" style="@style/top_bar_value_textview"/>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <ImageView style="@style/top_bar_empty_bar_imageview"/>
+                        <ImageView android:id="@+id/fragment_tob_bar_health_bar_value" android:src="@drawable/health_progress_bar" style="@style/top_bar_fill_bar_imageview"/>
+                    </RelativeLayout>
+                    <RelativeLayout style="@style/top_bar_third_layout">
+                        <LinearLayout android:id="@+id/fragment_tob_bar_health_timer_layout" style="@style/top_bar_fourth_layout">
+                            <ImageView style="@style/top_bar_timer_imageview"/>
+                            <TextView android:id="@+id/fragment_tob_bar_health_timer_text" style="@style/top_bar_timer_textview"/>
+                        </LinearLayout>
+                        <TextView android:id="@+id/fragment_tob_bar_health_name" android:text="@string/health_name" style="@style/top_bar_name_textview"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <ImageView android:id="@+id/fragment_tob_bar_health_icon" android:src="@drawable/health_icon" style="@style/top_bar_icon_imageview"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/fragment_top_bar_level_icon" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@drawable/level_icon" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="@+id/level_bottom_line" app:layout_constraintStart_toEndOf="@+id/name_left_line" app:layout_constraintTop_toBottomOf="@+id/level_top_line"/>
+        <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/fragment_top_bar_level_text" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="-2dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="@+id/level_left_line" app:layout_constraintStart_toEndOf="@+id/fragment_top_bar_level_icon" app:layout_constraintTop_toBottomOf="@+id/level_top_line_2"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="0dp" android:src="@drawable/progress_level_full_bar" android:scaleType="fitXY" app:layout_constraintBottom_toBottomOf="@+id/level_bottom_line" app:layout_constraintEnd_toEndOf="@+id/level_right_line" app:layout_constraintStart_toEndOf="@+id/level_left_line" app:layout_constraintTop_toBottomOf="@+id/level_top_line">
+            <ImageView android:id="@+id/fragment_top_bar_level_bar" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/progress_level_full_bar" android:scaleType="fitXY"/>
+            <TextView android:textSize="10sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/fragment_top_bar_level_experience" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="4dp" android:paddingEnd="4dp" style="@style/shadow_textview_small"/>
+        </RelativeLayout>
+        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/fragment_top_bar_health_toast" android:background="@color/health_background_toast" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingHorizontal="4dp" android:paddingVertical="2dp" app:layout_constraintEnd_toEndOf="@+id/level_right_line" app:layout_constraintTop_toBottomOf="@+id/name_bottom_line"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

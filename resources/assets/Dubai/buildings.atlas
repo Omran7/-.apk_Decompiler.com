@@ -1,0 +1,51 @@
+buildings.png
+	size: 1024, 512
+	filter: Linear, Linear
+@building_dubai
+	bounds: 73, 202, 180, 301
+@building_dubai2
+	bounds: 1, 53, 70, 450
+@building_fake10
+	bounds: 255, 351, 165, 152
+@building_fake4
+	bounds: 73, 106, 170, 94
+@building_fake5
+	bounds: 726, 409, 150, 94
+@building_fake6
+	bounds: 255, 244, 165, 105
+@building_fake9
+	bounds: 584, 344, 140, 159
+@building_oil_rig2
+	bounds: 422, 350, 160, 153
+@grass_decorate
+	bounds: 422, 293, 90, 55
+@grass_peice2
+	bounds: 255, 210, 45, 32
+@others_chair
+	bounds: 1, 1, 42, 50
+@others_fire
+	bounds: 245, 183, 6, 17
+@others_postal
+	bounds: 302, 219, 13, 23
+@others_stack
+	bounds: 514, 293, 32, 55
+@others_stack2
+	bounds: 422, 246, 27, 45
+@others_traffic_light
+	bounds: 797, 357, 14, 50
+@others_traffic_light3
+	bounds: 984, 453, 13, 50
+@others_traffic_light4
+	bounds: 878, 433, 66, 70
+@others_trash
+	bounds: 73, 67, 37, 37
+@others_trash2
+	bounds: 548, 323, 18, 25
+@others_trash5
+	bounds: 45, 23, 23, 28
+@others_trash6
+	bounds: 878, 409, 18, 22
+@tree14
+	bounds: 726, 347, 69, 60
+@tree6
+	bounds: 946, 443, 36, 60

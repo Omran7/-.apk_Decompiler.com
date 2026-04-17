@@ -1,0 +1,41 @@
+buildings.png
+	size: 1024, 512
+	filter: Linear, Linear
+@building_fake4
+	bounds: 173, 68, 170, 94
+@building_fake7
+	bounds: 1, 48, 170, 114
+@building_fake8
+	bounds: 610, 391, 160, 111
+@building_tripoli
+	bounds: 1, 164, 380, 338
+@building_tripoli2
+	bounds: 383, 158, 225, 344
+@grass_decorate
+	bounds: 610, 334, 90, 55
+@others_fire
+	bounds: 173, 49, 6, 17
+@others_postal
+	bounds: 947, 479, 13, 23
+@others_stack
+	bounds: 702, 334, 32, 55
+@others_stack2
+	bounds: 1, 1, 27, 45
+@others_traffic_light
+	bounds: 674, 282, 14, 50
+@others_traffic_light4
+	bounds: 772, 432, 66, 70
+@others_trash2
+	bounds: 610, 178, 18, 25
+@others_trash5
+	bounds: 772, 402, 23, 28
+@tree
+	bounds: 840, 437, 59, 65
+@tree11
+	bounds: 610, 205, 56, 60
+@tree15
+	bounds: 610, 267, 62, 65
+@tree16
+	bounds: 901, 437, 44, 65
+@tree6
+	bounds: 345, 102, 36, 60

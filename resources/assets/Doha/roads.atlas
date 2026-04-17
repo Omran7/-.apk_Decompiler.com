@@ -1,0 +1,17 @@
+roads.png
+	size: 1024, 128
+	filter: Linear, Linear
+@road_big
+	bounds: 1, 27, 160, 78
+@road_big_cross
+	bounds: 163, 27, 160, 78
+@road_big_cross2
+	bounds: 325, 27, 160, 78
+@road_big_cross3
+	bounds: 487, 27, 160, 78
+@road_big_curve_left
+	bounds: 649, 27, 143, 78
+@road_block2
+	bounds: 1, 1, 50, 24
+@road_dash
+	bounds: 794, 80, 49, 25

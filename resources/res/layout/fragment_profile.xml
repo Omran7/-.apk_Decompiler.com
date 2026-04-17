@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:id="@+id/fragment_profile_scroll_view" android:paddingBottom="-6dp" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/fragment_profile_bottom_bar" style="@style/scroll_bar_thumb">
+            <LinearLayout android:orientation="vertical" android:id="@+id/fragment_profile_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_profile_edit_text_layout" android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@+id/fragment_profile_bio_background" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/profile_bio_background" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_marginStart="12dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/fragment_profile_eye_button" app:layout_constraintTop_toTopOf="0"/>
+                    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/text_gray_dark_white" android:gravity="top" android:id="@+id/fragment_profile_bio_text_view" android:paddingLeft="4dp" android:paddingRight="8dp" android:layout_width="0dp" android:layout_height="0dp" android:maxLines="2" app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_bio_background" app:layout_constraintEnd_toEndOf="@+id/fragment_profile_bio_background" app:layout_constraintStart_toStartOf="@+id/fragment_profile_bio_background" app:layout_constraintTop_toTopOf="@+id/fragment_profile_bio_background" style="@style/shadow_textview"/>
+                    <RelativeLayout android:id="@+id/fragment_profile_eye_button" android:paddingTop="6dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="0dp" android:paddingVertical="6dp" app:layout_constraintBottom_toBottomOf="@+id/fragment_profile_bio_background" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/fragment_profile_bio_background">
+                        <ImageView android:id="@+id/fragment_profile_eye_button_image" android:background="@drawable/button_eye_blue" android:paddingLeft="4dp" android:paddingTop="8dp" android:paddingRight="4dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/button_eye_icon" android:adjustViewBounds="true" android:paddingHorizontal="4dp" android:paddingVertical="8dp"/>
+                    </RelativeLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </ScrollView>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_profile_bottom_bar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_bar_background" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.12"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.9"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.056"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.945"/>
+            <LinearLayout app:layout_constraintBottom_toBottomOf="@+id/bottom_line" app:layout_constraintEnd_toEndOf="@+id/right_line" app:layout_constraintStart_toEndOf="@+id/left_line" app:layout_constraintTop_toBottomOf="@+id/top_line" style="@style/fragment_default_main_bottom_bar_layout">
+                <RelativeLayout android:id="@+id/fragment_profile_back_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_back" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/button_back" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/fragment_profile_arming_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_equipments" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/arming_button" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/fragment_profile_skills_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_skills" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/skills_button" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/fragment_profile_medals_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_medals" style="@style/bottom_bar_imageview"/>
+                    <ImageView android:id="@+id/fragment_profile_medals_alert" style="@style/bottom_bar_alert_icon_imageview"/>
+                    <TextView android:text="@string/medals_button" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/fragment_profile_contacts_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_contacts" style="@style/bottom_bar_imageview"/>
+                    <ImageView android:id="@+id/fragment_profile_contacts_alert" style="@style/bottom_bar_alert_icon_imageview"/>
+                    <TextView android:text="@string/contacts_button" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</FrameLayout>

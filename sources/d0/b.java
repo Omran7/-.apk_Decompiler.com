@@ -1,0 +1,12 @@
+package D0;
+
+import java.util.concurrent.locks.ReentrantLock;
+
+public final class b {
+
+    /* renamed from: a  reason: collision with root package name */
+    public final ReentrantLock f486a = new ReentrantLock();
+
+    /* renamed from: b  reason: collision with root package name */
+    public int f487b;
+}

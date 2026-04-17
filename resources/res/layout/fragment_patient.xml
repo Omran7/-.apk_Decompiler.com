@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/line_top" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintGuide_percent="0.15"/>
+        <ImageView android:id="@+id/fragment_patient_background_image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/patient_background" android:scaleType="fitXY" android:adjustViewBounds="true"/>
+        <RelativeLayout android:id="@+id/fragment_patient_skirmishes_button" android:visibility="gone" android:layout_marginStart="8dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/line_top" style="@style/circle_button_layout">
+            <ImageView android:src="@drawable/button_circle_skirmishes" style="@style/circle_button_image_view"/>
+            <TextView android:text="@string/skirmishes" style="@style/circle_button_text_view"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/fragment_patient_phone_button" android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toBottomOf="@+id/line_top" style="@style/circle_button_layout">
+            <ImageView android:src="@drawable/button_circle_phone" style="@style/circle_button_image_view"/>
+            <ImageView android:id="@+id/fragment_patient_phone_alert" android:padding="0dp" style="@style/bottom_bar_alert_icon_imageview"/>
+            <TextView android:text="@string/phone" style="@style/circle_button_text_view"/>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_patient_bottom_bar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_bar_background" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.12"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.9"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.056"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.945"/>
+            <LinearLayout app:layout_constraintBottom_toBottomOf="@+id/bottom_line" app:layout_constraintEnd_toEndOf="@+id/right_line" app:layout_constraintStart_toEndOf="@+id/left_line" app:layout_constraintTop_toBottomOf="@+id/top_line" style="@style/fragment_default_main_bottom_bar_layout">
+                <RelativeLayout android:id="@+id/fragment_patient_chat_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_chat" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/chat" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/fragment_patient_news_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_news" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/news" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/fragment_patient_pharmacy_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_pharmacy" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/pharmacy" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+                <View android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <RelativeLayout android:id="@+id/fragment_patient_shop_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_shop" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/shop" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout android:orientation="vertical" android:padding="2dp" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toTopOf="@+id/guideline_bottom" app:layout_constraintEnd_toStartOf="@+id/guideline_end" app:layout_constraintStart_toEndOf="@+id/guideline_start" app:layout_constraintTop_toBottomOf="@+id/guideline_top">
+            <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/title_hospital" android:fontFamily="serif" style="@style/shadow_textview_small"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="center" android:id="@+id/fragment_patient_description" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fontFamily="serif" style="@style/shadow_textview_small"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/fragment_patient_time_word" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_to_leave" android:layout_alignParentEnd="true" style="@style/shadow_textview_small"/>
+                <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/fragment_patient_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:layout_toStartOf="@+id/fragment_patient_time_word" android:layout_alignParentStart="true" app:autoSizeMaxTextSize="12sp" app:autoSizeMinTextSize="6sp" app:autoSizeStepGranularity="1sp" app:autoSizeTextType="1" style="@style/shadow_textview_small"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/guideline_top" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.296"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/guideline_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.435"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/guideline_start" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.37"/>
+        <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/guideline_end" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.81"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

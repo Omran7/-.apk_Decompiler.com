@@ -1,0 +1,41 @@
+buildings.png
+	size: 512, 512
+	filter: Linear, Linear
+@building_fake11
+	bounds: 1, 31, 160, 143
+@building_fake2
+	bounds: 163, 173, 150, 102
+@building_fake4
+	bounds: 325, 416, 170, 94
+@building_fake5
+	bounds: 163, 77, 150, 94
+@building_fake8
+	bounds: 163, 399, 160, 111
+@building_riyadh
+	bounds: 1, 176, 160, 334
+@building_riyadh2
+	bounds: 163, 277, 150, 120
+@grass_decorate
+	bounds: 163, 20, 90, 55
+@others_chair
+	bounds: 315, 280, 42, 50
+@others_fire
+	bounds: 349, 261, 6, 17
+@others_postal
+	bounds: 497, 435, 13, 23
+@others_stack
+	bounds: 315, 223, 32, 55
+@others_stack2
+	bounds: 315, 176, 27, 45
+@others_traffic_light
+	bounds: 497, 460, 14, 50
+@others_traffic_light4
+	bounds: 255, 5, 66, 70
+@others_trash2
+	bounds: 315, 149, 18, 25
+@others_trash5
+	bounds: 1, 1, 23, 28
+@others_trash6
+	bounds: 26, 7, 18, 22
+@tree9
+	bounds: 315, 332, 46, 65

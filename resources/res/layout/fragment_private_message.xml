@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/store_background" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/fragment_private_message_edit_text_layout">
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/fragment_private_message_swipe_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ListView android:id="@+id/fragment_private_message_list_view" android:padding="8dp" android:scrollbars="none" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:transcriptMode="normal" android:divider="@android:color/transparent" android:dividerHeight="4dp" android:overScrollMode="never"/>
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        </RelativeLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_private_message_edit_text_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/fragment_private_message_bottom_bar">
+            <ImageView android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/chat_edit_text_layout_background" android:adjustViewBounds="true" android:layout_marginEnd="-50dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <ImageView android:id="@+id/fragment_private_message_send_button" android:layout_width="wrap_content" android:layout_height="0dp" android:src="@drawable/chat_button" android:adjustViewBounds="true" app:layout_constraintBottom_toBottomOf="@+id/fragment_private_message_edit_text" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/fragment_private_message_edit_text" app:layout_constraintTop_toTopOf="@+id/fragment_private_message_edit_text"/>
+            <EditText android:textSize="14sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/fragment_private_message_edit_text" android:background="@null" android:paddingLeft="8dp" android:paddingTop="2dp" android:paddingRight="8dp" android:paddingBottom="2dp" android:layout_width="0dp" android:layout_height="0dp" android:hint="@string/hint_type_here" android:paddingHorizontal="8dp" android:paddingVertical="2dp" app:layout_constraintBottom_toTopOf="@+id/space_bottom" app:layout_constraintEnd_toStartOf="@+id/space_end" app:layout_constraintStart_toEndOf="@+id/space_start" app:layout_constraintTop_toBottomOf="@+id/space_top" style="@style/shadow_textview_small"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/space_top" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.16"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/space_bottom" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.83"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/space_start" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.055"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/space_end" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.78"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/fragment_private_message_bottom_bar" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_bar_background" android:scaleType="fitXY" android:adjustViewBounds="true" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/top_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.12"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@+id/bottom_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.9"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/left_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.056"/>
+            <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@+id/right_line" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintGuide_percent="0.945"/>
+            <LinearLayout app:layout_constraintBottom_toBottomOf="@+id/bottom_line" app:layout_constraintEnd_toEndOf="@+id/right_line" app:layout_constraintStart_toEndOf="@+id/left_line" app:layout_constraintTop_toBottomOf="@+id/top_line" style="@style/fragment_default_main_bottom_bar_layout">
+                <RelativeLayout android:id="@+id/fragment_private_message_back_button" style="@style/bottom_bar_layout">
+                    <ImageView android:src="@drawable/button_back" style="@style/bottom_bar_imageview"/>
+                    <TextView android:text="@string/button_back" style="@style/bottom_bar_textview"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</FrameLayout>

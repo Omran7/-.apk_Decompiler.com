@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/start_activity_background" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+    <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/activity_start_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16dp" android:layout_centerInParent="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/shadow_textview_small"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/activity_start_progress_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="24dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_screen_progress_bar_empty" android:adjustViewBounds="true" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/activity_start_full_progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_screen_progress_bar_full" android:adjustViewBounds="true"/>
+            <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/activity_start_progress_bar_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="@style/shadow_textview_small"/>
+            <ImageView android:id="@+id/activity_start_full_fake_progress_bar" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_screen_progress_bar_full" android:adjustViewBounds="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/by_mtma_with_android_icon" android:adjustViewBounds="true" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/activity_start_progress_layout" app:tint="@color/red_dark"/>
+    <FrameLayout android:id="@+id/activity_start_frame_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
